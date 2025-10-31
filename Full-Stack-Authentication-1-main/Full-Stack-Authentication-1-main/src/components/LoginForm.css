@@ -1,0 +1,93 @@
+/* LoginForm.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 350px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #f0f0f0;
+  font-size: 15px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+  background: #e8f0fe;
+  box-shadow: 0 0 5px #2575fc;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: translateY(-2px);
+}
+
+.login-container .error {
+  color: #ff4d4d;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+  .login-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+}
